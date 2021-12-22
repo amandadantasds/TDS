@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* modal */
+
+.modal-overlay{
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  z-index: 11;
+}
+
+#estrela{
+  width: 5rem;
+}
+
+#jogarnovamente{
+  color: orangered;
+  font-size: 1.7rem;
+}
+.modal-overlay.active{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#modal{
+  padding: 2.5rem 2rem; 
+  border-radius: 1rem;
+  background-color: #00B395;
+  align-items: center;
+  position: relative;
+}
+
+#sair{
+  margin-left: -0.5rem;
+  position: absolute;
+  margin-top: -1rem;
+}
+
+/* form */
+
+#form{
+  max-width: 300px;
+}
+
+#form h2{
+  font-family: Bebas Neue;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin-top: 0;
+}
+
+#form h3{
+  font-family: Bebas Neue;
+  font-size: 1.7rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0;
+}
+
+#form img{
+  width: 8rem;
+  margin-left: 5.5rem;
+  margin-right: 5rem;
+}
+
+header{
+  background-color: #00B395;
+  justify-content: center;
+  height: 45vw;
+  display: flex;
+}
+ /* botão back to top*/
+
+#btn-back-to-top {
+  position: fixed;
+  clip-path: circle();
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color:#00B395;
+}
+
+i{
+  color: white;
+}
+
+/* menu */
+
+#linorte{
+  margin-top: 4rem;
+}
+
+ul li a{
+    font-family: Bebas Neue;
+    text-align: left;
+    padding: 1.25rem 0.31rem 1.25rem 1.5rem;
+    font-size: 2.5rem;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #f7f7f5;
+
+}
+ul li a:hover{
+    opacity: 0.9;
+}
+
+label img{
+ position: absolute;
+ cursor: pointer;
+
+ padding: 1rem 0 0 0;
+ margin-left: -6rem;
+ width: 3rem;
+  
+  z-index: 11;
+}
+
+nav{
+  background-color: #00B395;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#navigation{
+  position: absolute;
+  height: 100vh;
+  position: fixed;
+  width: 21rem;
+  left: -21rem;
+  text-align: left;
+
+  transition: 0.5s;
+}
+
+.sair{
+  margin-left: 1rem;
+}
+
+h1{
+  font-family: 'Bebas Neue';
+  font-size: 15vw;
+  margin-top: 15%;
+  color: #ffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#personagem{
+  width: 42vw;
+  margin-left: 2rem;
+}
+
+.conteudo{
+  display: flex;
+  padding: 2rem 0 5rem;
+}
+
+.conteudobackground{
+  display: flex;
+  background-color: rgb(252, 249, 249);
+  padding: 2rem 0 2rem;
+}
+
+#esquerdaimg{
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  width: 45vw;
+}
+
+#direitaimg{
+  margin-left: 3rem;
+  width: 45vw;
+}
+
+.texto{
+  font-family: "Bebas Neue";
+  margin-left: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 12vh;
+  width: 45vw;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.texto h2{
+  font-size: 7rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: orangered;
+}
+
+#centrotitle{
+  color: #12B33D;
+  margin-top: 2rem;
+}
+
+#nordestetitle{
+  color: #D80D14;
+  margin-top: 2.5rem;
+}
+
+#sudestetitle{
+  color: #020658;
+  
+}
+
+#sultitle{
+  color: #FCDF18;
+}
+
+.nordesteimg{
+  margin-left: -1rem!important;
+}
+
+.sudesteimg{
+  width: 45vw!important;
+  margin-top: 5rem!important;
+}
+
+.sulimg{
+  width: 40vw!important;
+  margin-left: 2rem!important;
+  margin-right: 5rem!important;
+}
+
+#textosudeste{
+  margin-left: 3rem;
+}
+
+a{
+  font-family: "Bebas Neue";
+  font-size: 1.5rem;
+  color:#8b8b8b;
+  text-decoration: none;
+}
+
+button{
+  background-color: rgba(199, 196, 196, 0.486);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 3rem;
+  margin-top: 2rem;
+
+}
+
+.jogar{
+  background-color: #00B395;
+  padding: 0.5rem 5rem;
+}
+
+.jogar a{
+  color: white;
+  font-size: 2rem;
+}
+
+footer{
+  font-family: "Bebas Neue";
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  background-color: #00B395;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+  
+  #jogarnovamente{
+    font-size: 1.5rem;
+  }
+
+  #form {
+    max-width: 250px;
+}
+  #form h2{
+    font-size: 3.5rem;
+  }
+  
+  #form h3{
+    font-size: 1.5rem;
+  }
+  
+  #form img{
+    width: 5rem;
+    margin-left: 5.2rem;
+  }
+
+  #sair{
+    margin-left: -1rem;
+  }
+
+  #estrela{
+    width: 5rem;
+  }
+  label img{
+    margin: auto;
+    width: 1rem;
+  }
+
+  ul li a{
+    padding: 1rem;
+    font-size: 2.2rem;
+  }
+
+  #navigation{
+    width: 18rem;
+    z-index: 1;
+  }
+  #esquerdaimg{
+    position:absolute;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2vh;
+  }
+  
+  #direitaimg{
+    position :absolute;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .conteudo{
+    justify-content: center;
+  }
+
+  .conteudobackground{
+    justify-content: center;
+  }
+
+  .nordesteimg{
+    margin-left: auto!important;
+  }
+  
+  .sudesteimg{
+    margin-top: auto!important;
+  }
+  
+  .sulimg{
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }  
+
+  .texto h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  #centrotitle{
+    margin-top: 35%;
+  }
+
+  #nordestetitle{
+    margin-top: 45%;
+  }
+
+  #sudestetitle{
+    margin-top: 22%;
+  }
+
+  #sultitle{
+    margin-top: 44%;
+  }
+
+  .texto{
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    margin-top: 12vh;
+
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  #textosudeste{
+    margin-left: auto;
+  }
+
+button{
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+  
+  }
+
+  a{
+    font-size: 1.2rem;
+  }
+
+  .jogar{
+    padding: 0.5rem 3rem;
+  }
+
+  .jogar a{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 950px){
+
+  label img{
+    margin: 0 0 0 -1rem;
+    width: 1rem;
+  }
+
+  ul li a{
+    padding: 1rem;
+    font-size: 2.2rem;
+  }
+
+  #navigation{
+    width: 18rem;
+    z-index: 1;
+  }
+  #esquerdaimg{
+    position:absolute;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #direitaimg{
+    position :absolute;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .conteudo{
+    justify-content: center;
+  }
+
+  .conteudobackground{
+    justify-content: center;
+  }
+
+  .nordesteimg{
+    margin-left: auto!important;
+  }
+  
+  .sudesteimg{
+    margin-top: auto!important;
+  }
+  
+  .sulimg{
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }  
+
+  .texto h2{
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 30%;
+  }
+
+  #centrotitle{
+    margin-top: 45%;
+  }
+
+  #nordestetitle{
+    margin-top: 55%;
+  }
+
+  #sudestetitle{
+    margin-top: 32%;
+  }
+
+  #sultitle{
+    margin-top: 54%;
+  }
+
+  .texto{
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    margin-top: 12vh;
+
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  #textosudeste{
+    margin-left: auto;
+  }
+
+button{
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+  
+  }
+
+  a{
+    font-size: 1.2rem;
+  }
+
+  .jogar{
+    padding: 0.5rem 3rem;
+  }
+
+  .jogar a{
+    font-size: 1.2rem;
+  }
+}

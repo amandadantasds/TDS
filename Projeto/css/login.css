@@ -1,0 +1,348 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+.forma{
+  width: 60vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.conteudo{
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.conteudo h2{
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: normal;
+font-size: 2.5rem;
+color: white;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo a{
+  text-decoration: none;
+
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.conteudo img{
+  height: 80vh;
+  display: flex;
+}
+
+.form h1{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7.5rem;
+  text-align: center;
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#recuperar{
+  font-size: 5rem;
+  margin-top: 7vh;
+  margin-bottom: 1rem;
+}
+
+
+h2#recuperartext{
+font-family: "Bebas Neue";
+font-size: 2rem;
+text-align: center;
+
+margin-bottom: 1rem;
+color: orangered;
+}
+
+h2#codigotext{
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  text-align: center;
+  
+  margin-bottom: 1.5rem;
+  color: orangered;
+}
+
+h2#senhatext{
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  text-align: center;
+  
+  margin-bottom: 1rem;
+  color: orangered;
+}
+
+h2#novasenhatext{
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  text-align: center;
+  
+  margin-bottom: 1rem;
+  color: orangered;
+}
+
+.form a{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: right;
+  text-decoration: none;
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  padding: 14vh;
+  float: right;
+  width: 50vw;
+}
+
+.form{
+  display: block;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form input{
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-align: left;
+  height: 5rem;
+  width: 35vw;
+  background-color: rgba(196, 196, 196, 0.31);
+  color: rgba(38, 50, 56, 0.59);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(196, 196, 196, 0.31);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#icon{
+  position: absolute;
+  margin-top: -7.5vh;
+  margin-left: -3vw;
+}
+
+#iconNovasenha{
+  position: absolute;
+  margin-top: -10vh;
+  margin-left: 31vw;
+}
+
+.entrar{
+  display: flex;
+  justify-content: center;
+}
+
+.entrar input{
+  width: 14vw;
+  height: 8vh;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+
+  background-color: orangered;
+  color: white;
+}
+
+input#prosseguir{
+  margin-top: 2rem;
+}
+
+input#prosseguircodigo{
+  margin-top: 2rem;
+}
+
+input#salvarnovasenha{
+  margin-top: 2rem;
+}
+
+input[type=text]{
+  outline:none;
+  margin-top: 1rem;
+}
+
+input[type=password]{
+  outline:none;
+  margin-top: 2rem;
+}
+
+h2#principal {
+  margin-top: 2rem;
+}
+
+input#email.errorInput {
+  border: 3px solid rgb(207, 53, 53) !important;
+}
+
+input#emailrecuperar.errorInput {
+  border: 3px solid rgb(207, 53, 53) !important;
+}
+
+input#senha.errorInput {
+  border: 3px solid rgb(207, 53, 53) !important;
+}
+
+h3{
+  text-align: center;
+  font-size: 1.5rem;
+  color: orangered;
+  font-family: 'Bebas Neue';
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+  }
+
+
+@media only screen and (min-width: 300px) and (max-width: 800px){
+  body {
+    overflow: visible;
+  }
+
+  .forma{
+    height: 100vh;
+    width: 92vw;
+  }
+  .conteudo img {
+    height: 40vh;
+    width: 100vw;
+}
+
+.conteudo h2{
+  font-size: 1.4rem;
+}
+
+.formulario{
+  position: absolute;
+  width: 100vw;
+  padding: 0%;
+}
+
+.form h1{
+ font-size: 4rem; 
+ margin-top: 50vh;
+ margin-bottom: 0.5rem;
+}
+
+#recuperar{
+  font-size: 2.7rem;
+  margin-top: 55vh;
+  margin-bottom: 1rem;
+}
+
+
+h2#recuperartext{
+  font-size: 1.5rem;
+}
+
+h2#codigotext{
+  font-size: 1.2rem;
+}
+
+h2#recuperartext{
+  font-size: 1.5rem;
+}
+
+
+h2#novasenhatext{
+  font-size: 1.5rem;
+  }
+
+.form a{
+  font-size: 1rem;
+  margin-top: -1vh;
+  margin-bottom: 1vh;
+}
+.form input{
+  height: 6vh;
+  width: 75vw;
+  background-color: rgb(226, 226, 226);
+}
+
+.entrar input{
+  height: 5vh;
+  font-size: 1.2rem;
+  width: 33vw;
+  background-color: orangered;
+}
+
+input#codigorecuperar{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+input#salvarnovasenha{
+  font-size: 1rem;
+  text-align: center;
+}
+
+#icon{
+  margin-top: -5.5vh;
+  margin-left: -10vw;
+  }
+
+  #iconNovasenha{
+  margin-top: -2.5rem;
+  margin-left: 60vw;
+  }
+
+  input#prosseguir{
+    margin-top: auto;
+  }
+  
+  input#prosseguircodigo{
+    margin-top: auto;
+  }
+  
+  input#salvarnovasenha{
+    margin-top: auto;
+  }
+
+input[type=text]{
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+input[type=password]{
+  margin-bottom: 1rem;
+  margin-top: auto;
+  font-size: 1.2rem;
+}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1190px){
+
+  .conteudo h2{
+    font-size: 2rem;
+  }
+  .conteudo img{
+    height: 65vh;
+    width: 56vw;
+  }
+}

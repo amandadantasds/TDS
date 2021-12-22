@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+.forma{
+  width: 80vw;
+  height: 100vh;
+  margin-left: 30vw;
+  position: fixed;
+}
+
+.conteudo{
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 50vw;
+}
+
+.conteudo h2{
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: normal;
+font-size: 2.5rem;
+color: white;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2#principal{
+  margin-top: 2rem;
+}
+
+.conteudo a{
+  text-decoration: none;
+
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo img{
+  height: 85vh;
+  margin-left: 2vw;
+  margin-top: -1rem;
+  display: flex;
+}
+
+.form h1{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form a{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: right;
+  text-decoration: none;
+  color: orangered;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+  float: right;
+  width: 50vw;
+}
+
+.form{
+  display: block;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form input{
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-align: left;
+  height: 10vh;
+  width: 35vw;
+  background-color: rgba(196, 196, 196, 0.31);
+  color: rgba(38, 50, 56, 0.59);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(196, 196, 196, 0.31);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a img{
+  position: absolute;
+  margin-top: -11.5vh;
+  margin-left: -3vw;
+}
+
+.cadastrar{
+  display: flex;
+  justify-content: center;
+}
+
+.cadastrar input{
+  width: 14vw;
+  height: 8vh;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: 1.5rem;
+
+  background-color: orangered;
+  color: white;
+}
+
+input[type=text]{
+  outline:none;
+  margin-bottom: 2rem;
+}
+input[type=password]{
+  outline:none;
+  margin-bottom: 2rem;
+}
+
+input#nome.errorInput {
+  border: 3px solid rgb(207, 53, 53);
+}
+
+input#sobrenome.errorInput {
+  border: 3px solid rgb(207, 53, 53);
+}
+
+input#email.errorInput {
+  border: 3px solid rgb(207, 53, 53);
+}
+
+input#senha.errorInput {
+  border: 3px solid rgb(207, 53, 53);
+}
+
+h3{
+text-align: center;
+font-size: 1.5rem;
+color: orangered;
+font-family: 'Bebas Neue';
+margin-top: -2rem;
+margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 800px){
+  body {
+    overflow: visible;
+  }
+  .forma{
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+  }
+
+  .conteudo{
+    width: auto;
+  }
+ 
+  .conteudo img {
+    height: 40vh;
+    width: 100vw;
+}
+
+.conteudo h2{
+  font-size: 1.4rem;
+}
+
+.formulario{
+  position: absolute;
+  width: 100vw;
+  padding: 0%;
+}
+
+.form h1{
+ font-size: 3.5rem; 
+ margin-top: 50vh;
+ margin-bottom: 1rem;
+}
+
+.form a{
+  font-size: 1rem;
+  margin-top: -1vh;
+  margin-bottom: 2vh;
+}
+.form input{
+  height: 6vh;
+  width: 75vw;
+  background-color: rgb(226, 226, 226);
+  font-size: 1rem;
+}
+
+.cadastrar input{
+  height: 5vh;
+  font-size: 1rem;
+  width: 35vw;
+  background-color: orangered;
+}
+
+#icon{
+  margin-top: -7vh;
+  margin-left: -10vw;
+}
+  
+h2#principal {
+  margin-top: 2rem;
+}
+
+input[type=text]{
+  margin-bottom: 1.5rem;
+}
+
+input[type=password]{
+  margin-bottom: 1.5rem;
+}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1190px){
+
+  .conteudo h2{
+    font-size: 2rem;
+  }
+  .conteudo img{
+    height: 85vh;
+    width: 50vw;
+  }
+}
